@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import { ShareService } from '../share.service';
 @Component({
   selector: 'app-signin-sign-up',
   templateUrl: './signin-sign-up.component.html',
@@ -15,7 +15,7 @@ export class SigninSignUpComponent implements OnInit {
   isSignIn = true;
   Password_Type = "password"
 
-  constructor(private route : Router){}
+  constructor(private route : Router, private share: ShareService){}
   Eye() {
     if (this.Password_Type === 'password') {
       this.Password_Type = 'text';
@@ -49,8 +49,7 @@ export class SigninSignUpComponent implements OnInit {
       this.IsValid = true;
     }
   }
-  userdata: user[] = [];
-
+  
   SignUp() {
     var a = this.signUpform.value.First;
     var b = this.signUpform.value.Second;
@@ -59,18 +58,20 @@ export class SigninSignUpComponent implements OnInit {
     var e = this.signUpform.value.Password
     console.log(a + b + c + d + e);
     var user1 = new user(a, b, c, d, e);
-    this.userdata.push(user1)
+    this.share.AddUser(user1);
+    
   }
   SignIn() {
     var email = this.signInform.value.Email;
     var password = this.signInform.value.Password;
     console.log(email + password);
-    if (this.userdata.length < 1) {
+    var userdata = this.share.getUserData();
+    if (userdata.length < 1) {
       console.log("User Not Found");
     }
     else {
-      for (let index = 0; index < this.userdata.length; index++) {
-        const element = this.userdata[index];
+      for (let index = 0; index < userdata.length; index++) {
+        const element = userdata[index];
         console.log(element);
         if (element.email === email) {
           if (element.password === password) {
@@ -90,7 +91,7 @@ export class SigninSignUpComponent implements OnInit {
   }
 }
 
-class user {
+export class user {
   first: string;
   second: String
   email: String
