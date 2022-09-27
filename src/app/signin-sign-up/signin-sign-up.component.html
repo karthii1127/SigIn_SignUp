@@ -1,0 +1,85 @@
+<div class="Home">
+    <div class="images">
+      <img src="assets/SignIn.png" class="Images" *ngIf="isSignIn" alt="SignIn">
+      <img src="assets/SignUp.png" class="Images" *ngIf="!isSignIn" alt="SignUp">
+    </div>
+    <div class="divider">
+      <img src="assets/Line.png" alt="line">
+    </div>
+    <div class="Sign">
+      <div *ngIf="isSignIn">
+        <img class="logo1" src="assets/Logo.png" alt="logo">
+        <div class="signin">
+          <form [formGroup]="signInform" (ngSubmit)="SignIn()">
+            <table>
+              <tr>
+                <button class="btns Signin_btn" disabled="true">SIGN IN</button>
+                <button class="btns Signup_btn" (click)="ToSignUp()">SIGN UP</button>
+              </tr>
+              <tr>
+                <input type="email" name="email" id="email" placeholder="Email" formControlName="Email">
+              </tr>
+              <tr>
+                <input type="{{Password_Type}}" name="pass" id="pass" placeholder="Password" formControlName="Password">
+                <span class="material-symbols-outlined eye" (click)="Eye()">
+                  visibility
+                </span>
+              <tr>
+                <td>
+                  <a href="#">Forgot Password ?</a>
+                </td>
+                <td>
+                  <button class="btn btn-primary" type="submit" [disabled]="signInform.invalid">Sign In</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div *ngIf="!isSignIn">
+        <img class="logo2" src="assets/Logo.png" alt="logo">
+        <div class="signup">
+          <form [formGroup]="signUpform" (ngSubmit)="SignUp()">
+            <table>
+              <tr>
+                <button class="btns Signin_btn" (click)="ToSignIn()">SIGN IN</button>
+                <button class="btns Signup_btn" disabled="true">SIGN UP</button>
+              </tr>
+  
+              <tr>
+                <td class="form-group">
+                  <input type="text" name="first" id="first" placeholder="First Name" formControlName="First">
+                </td>
+                <td>
+                  <input type="text" name="second" id="second" placeholder="Second Name" formControlName="Second">
+                </td>
+              </tr>
+              <tr>
+                <input type="text" id="Test_DatetimeLocal" placeholder="Date of Birth" formControlName="DOB">
+              </tr>
+              <tr>
+                <input type="email" placeholder="Email" formControlName="Email">
+              </tr>
+              <tr>
+                <input type="text" placeholder="Password" formControlName="Password">
+              </tr>
+              <tr>
+                <input [type]="Password_Type" name="pass" id="pass" placeholder="Re-Enter Password"
+                  formControlName="Password_Type" (keyup)="CheckValid()" (keydown)="CheckValid()">
+                <span class="material-symbols-outlined eye" (click)="Eye()">
+                  visibility
+                </span>
+              </tr>
+            </table>
+            <input type="checkbox" name="terms" id="TC">
+            <p>Accept the <a href="#">Terms</a> and <a href="#">Conditions</a></p>
+            <button class="btn btn-primary" type="submit" [disabled]="!IsValid">SignUp</button>
+          </form>
+        </div>
+      </div>
+      <p>Goto <a href="#">Kaar Technology</a></p>
+      <p class="tags help">Help</p>
+      <p class="tags privacy">Privacy</p>
+      <p class="tags terms">Terms</p>
+    </div>
+  </div>

@@ -4,9 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SigninSignUpComponent } from './signin-sign-up/signin-sign-up.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninSignUpComponent
   ],
   imports: [
     BrowserModule,

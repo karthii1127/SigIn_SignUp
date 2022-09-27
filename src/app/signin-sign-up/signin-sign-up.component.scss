@@ -1,0 +1,231 @@
+.Home {
+    margin-top: 5rem;
+}
+
+.images {
+    display: inline-block;
+    width: 45%;
+}
+
+.images img {
+    padding-top: 30px;
+    padding-left: 90px;
+    height: 600px;
+}
+
+.divider {
+    display: inline-block;
+    width: 10px;
+    height: 600px;
+}
+
+.Sign {
+    display: inline-block;
+    width: 45%;
+}
+
+.logo1 {
+    margin: -500px 0 0 350px;
+    width: 155px;
+    height: 155px;
+}
+
+.signin {
+    margin: -130px 0 0 150px;
+    height: 400px;
+    width: 580px;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+}
+
+.signin .btns {
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    border-radius: 50px;
+    height: 60px;
+}
+
+.signin .Signin_btn {
+    position: absolute;
+    background-color: #E03E00;
+    color: white;
+    width: 158px;
+}
+
+.signin .Signup_btn {
+    color: #E03E00;
+    background: #F7F7F7;
+    box-shadow: inset -4px -4px 2px rgba(0, 0, 0, 0.1), inset 0px 4px 2px rgba(0, 0, 0, 0.1);
+    width: 316px;
+    text-align: right;
+    color: #E03E00;
+    padding-right: 40px;
+}
+
+.signin input {
+    margin: 20px 50px;
+    width: 430px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    padding: 5px 15px;
+}
+
+.signin .eye {
+    color: #bcbbbb;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.signin td a {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.signin .btn {
+    margin-top: 20px;
+    margin-left: -130px;
+}
+
+
+// SignUp
+.logo2 {
+    margin: -600px 0 0 350px;
+    width: 155px;
+    height: 155px;
+}
+
+.signup {
+    margin: -200px 0 0 150px;
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+    width: 550px;
+    height: 550px;
+}
+
+.signup .btns {
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    border-radius: 50px;
+    height: 60px;
+}
+
+.signup .Signup_btn {
+    position: absolute;
+    background-color: #E03E00;
+    color: white;
+    width: 158px;
+    margin-left: -160px;
+}
+
+.signup .Signin_btn {
+    color: #E03E00;
+    background: #F7F7F7;
+    box-shadow: inset -4px -4px 2px rgba(0, 0, 0, 0.1), inset 0px 4px 2px rgba(0, 0, 0, 0.1);
+    width: 316px;
+    text-align: left;
+    color: #E03E00;
+    padding-left: 40px;
+}
+
+.signup input {
+    margin: 10px 50px;
+    width: 430px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    padding: 5px 15px;
+}
+
+#first,
+#second {
+    width: 200px;
+}
+
+#second {
+    margin-left: -17rem;
+}
+
+.signup .eye {
+    color: #bcbbbb;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+
+
+.signup .btn {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+#TC {
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+}
+
+.signup p {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 70px;
+    color: #7D7D7D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+
+
+
+
+
+
+// Tags
+p {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 150px;
+    color: #7D7D7D;
+}
+
+.tags {
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.help {
+    left: 1150px;
+}
+
+.privacy {
+    left: 1225px
+}
+
+.terms {
+    left: 1300px
+}
