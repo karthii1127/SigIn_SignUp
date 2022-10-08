@@ -1,0 +1,7 @@
+<div class="header">
+    <img src="assets/kaar.jpg" alt="Logo" class="logo">
+    <a href="#" class="href">Home</a>
+    <button class="V_P" (click)="check($event)"><i class="fas fa-th-large"></i> View Products</button>
+    <button class="check_out ed" [matBadge]="Cartcount" matBadgeOverlap="false" matBadgeColor="accent"><i class="fas fa-cart-arrow-down"></i>check out</button>
+    <button class="Profile"><i class="far fa-user-circle"></i>{{name}}</button>
+</div>  

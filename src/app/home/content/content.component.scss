@@ -1,0 +1,69 @@
+.content {
+    margin: 8rem 5rem 1rem;
+    height: auto;
+    // border: 1px solid red;
+}
+
+.title {
+    margin-top: 181px;
+    margin-left: 50px;
+}
+
+.example-card {
+    max-width: 400px;
+    display: inline-block;
+    margin: 50px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+p {
+    text-overflow: clip;
+}
+
+.info {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    margin: 20px 0;
+}
+
+.price {
+    float: right;
+    font-weight: 700;
+    margin-top: -40px;
+}
+
+.sign {
+    border: none;
+    background: #F1F1F1;
+    border-radius: 6px 0px 0px 6px;
+    width: 35.71px;
+    height: 39.63px;
+}
+
+.itemscount {
+    border: none;
+    background: #FDFDFD;
+    border: 1px solid #F1F1F1;
+    width: 100px;
+    height: 39.63px;
+}
+
+.itcnt {
+    display: inline-block;
+}
+
+.cart {
+    width: 136px;
+    height: 39px;
+    color: white;
+    background: #67CD7F;
+    border-radius: 6px;
+    border: none;
+    float: right;
+}

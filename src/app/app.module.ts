@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SigninSignUpComponent } from './signin-sign-up/signin-sign-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +15,7 @@ import { SigninSignUpComponent } from './signin-sign-up/signin-sign-up.component
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [],

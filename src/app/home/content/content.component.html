@@ -1,0 +1,26 @@
+<div class="content">
+    <h3 class="title">Products</h3>
+    <mat-card class="example-card" *ngFor="let i of items">
+        <mat-card-header>
+        </mat-card-header>
+        <img mat-card-image src="assets/i.jpg" alt="Photo of a Shiba Inu">
+            <ul>
+                <li class="info"> Iphone 14 Pro Max</li>
+                <li class="info price" ><i class="fa-solid fa-indian-rupee-sign"></i>1,39,900</li>
+            </ul>
+        <mat-card-content>
+            <p>
+                Apple iPhone 14 Pro Max is the new mobile from Apple that was launched in India on September 7, 2022
+                (Official). This mobile is available at a starting price of Rs 139,900 in different color options. The
+                mobile from Apple comes with a 6.7 inches (17.02 cm)
+            </p>
+        </mat-card-content>
+        <p class="count">Count:</p>
+        <div class="itcnt">
+            <button class="sign">-</button>
+            <button class="itemscount">{{itemscount}}</button>
+            <button class="sign">+</button>
+        </div>
+        <button class="cart"><i class="fa-sharp fa-solid fa-cart-plus"></i>Add to cart</button>
+    </mat-card>
+</div>
